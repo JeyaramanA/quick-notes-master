@@ -3,8 +3,6 @@
 # Angular Concepts Covered
 TypeScript version that relies on classes and modules
 
-Modules are loaded with System.js
-
 Defining Properties and Using Events in Components
 
 Using Angular databinding Syntax [], () and [()]
