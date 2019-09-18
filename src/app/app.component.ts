@@ -47,8 +47,8 @@ export class AppComponent {
 	delete(index: number) {
 		this.dialogSvc.confirm('Please confirm!', 'Are you sure, You would like to delete this Quick Note?').then(s => {
 			if (s) {
-				this.quickNotes.splice(index, 1);
-				this.quickNotesFilters.splice(index, 1);
+				this.quickNotesFilters = this.quickNotes.splice(index, 1);
+				// this.quickNotesFilters.splice(index, 1);
 				this.notificationSvc.success('Success!', 'Successfully deleted');
 			}
 		})
