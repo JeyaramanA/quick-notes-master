@@ -1,0 +1,13 @@
+.card-header {
+    padding: 0.5rem 0.5rem !important;
+}
+
+li {
+    list-style-type: none;
+}
+
+.side-scroll {
+    overflow-y: overlay;
+    overflow-x: hidden;
+    height: calc(100vh - 191px);
+}
