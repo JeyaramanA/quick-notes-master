@@ -67,6 +67,7 @@ export class AppComponent {
 			if (s) {
 				if (!type) {
 					this.quickNotesFilters.push(s);
+					this.quickNotes.push(s);
 					this.noteSvc.storeOnLocalStorage(s);
 				} else {
 					this.quickNotes[index] = s;
