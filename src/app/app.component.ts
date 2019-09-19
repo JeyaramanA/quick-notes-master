@@ -33,7 +33,7 @@ export class AppComponent {
 		private notificationSvc: NotificationsService,
 		private noteSvc: NoteService,
 		@Inject(LOCAL_STORAGE) private storage: StorageService) {
-
+			this.getStorage();
 	}
 
 	add() {
@@ -66,8 +66,7 @@ export class AppComponent {
 		ref.result.then(s => {
 			if (s) {
 				if (!type) {
-					this.quickNotesFilters.push(s);
-					this.quickNotes.push(s);
+					this.quickNotesFilters = Object.assign([], this.quickNotes.push(s));
 					this.noteSvc.storeOnLocalStorage(s);
 				} else {
 					this.quickNotes[index] = s;
