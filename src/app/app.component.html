@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light top-bar">
+<nav class="navbar navbar-expand-lg navbar-light top-bar fixed-top">
   <a class="navbar-brand text-white">Quick Notes</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
@@ -13,7 +13,7 @@
   </div>
 </nav>
 
-<div class="row">
+<div class="row mt-5">
   <div class="col-md-3">
     <div class="card box-shadow" style="height: calc(100vh)">
       <div class="card-body">
@@ -31,7 +31,7 @@
             </button>
           </div>
         </div>
-        <div class="row mt-2 side-scroll">
+        <div class="row mt-2">
           <div class="col-md-12">
             <ul class="list-group">
               <li class="list-group-item" *ngFor="let item of quickNotes; let i = index;">
@@ -45,7 +45,7 @@
                     </div>
                   </div>
                   <div class="col-md-1">
-                    <div ngbDropdown class="d-inline-block" [placement]="['left', 'top']">
+                    <div ngbDropdown class="d-inline-block">
                       <span class="pointer" id="dropdownBasic1" ngbDropdownToggle>
                         <i class="fa fa-ellipsis-h text-info" placement="left" ngbTooltip="Actions"></i>
                       </span>

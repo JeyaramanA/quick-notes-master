@@ -8,7 +8,8 @@ html {
   margin: 0;
   padding: 0;
   background-color: #edf0f5!important;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .box-shadow {
